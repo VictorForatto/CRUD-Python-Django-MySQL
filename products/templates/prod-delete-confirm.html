@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bet Control</title>
+    <title>CRUD</title>
 </head>
 <body>
 <form method="post">
     {% csrf_token %}
-    <h2>Are you sure you want to remove {{ product.description }} ?</h2>
+    <h2>Tem certeza que quer remover {{ product.description }} ?</h2>
     <button type="submit">Confirm</button>
 </form>
 </body>

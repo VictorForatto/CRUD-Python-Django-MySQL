@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bets Control</title>
+    <title>CRUD</title>
 </head>
 <body>
     <h1>New/Update Product</h1>
     <form method="POST">
         {% csrf_token %}
         {{ form }}
-        <button type="submit">Save</button>
+        <button type="submit">Salvar</button>
     </form>
 
     {% if product %}
-        <a href="{% url 'delete_products' product.id %}">Delete</a>
+        <a href="{% url 'delete_products' product.id %}">Deletar</a>
     {% endif %}
 </body>
 </html>
