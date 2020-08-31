@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bets Control</title>
 </head>
 <body>
+
     <ul>
-        {% for product in product %}
-            <a href="{% url 'update_product' product.id %">
+        {% for product in products %}
+            <a href="{% url 'update_products' product.id %}">
                 <li>{{ product.description}}</li>
             </a>
         {% endfor %}
     </ul>
 
-    <a href="{% url 'create_product' %}">New Product</a>
+
+    <a href="{% url 'create_products' %}">New Product</a>
+
+
+    
 </body>
 </html>
