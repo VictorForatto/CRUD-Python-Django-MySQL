@@ -6,6 +6,7 @@
     <title>CRUD</title>
 </head>
 <body>
+
     <h1>New/Update Product</h1>
     <form method="POST">
         {% csrf_token %}
@@ -16,5 +17,7 @@
     {% if product %}
         <a href="{% url 'delete_products' product.id %}">Deletar</a>
     {% endif %}
+
+<p>Autor: Victor Forato Abreu Pereira</p>
 </body>
 </html>
